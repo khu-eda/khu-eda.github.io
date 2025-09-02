@@ -1,0 +1,26 @@
+<header>
+  <h1><a href="index.html">AIDA Lab</a></h1>
+  <div class="menu-toggle" role="button" aria-label="Menu" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+  <nav id="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+
+    <!-- before: <a href="people/index.html" ...>People</a> -->
+	<div class="has-submenu">
+	  <button class="submenu-parent" type="button" aria-haspopup="true" aria-expanded="false">
+		People
+	  </button>
+	  <ul class="submenu" role="menu" aria-label="People submenu">
+		<li role="none"><a role="menuitem" href="people/professor.html">Professor</a></li>
+		<li role="none"><a role="menuitem" href="people/members.html">Current Members</a></li>
+	  </ul>
+	</div>
+
+
+    <a href="publications.html">Publications</a>
+    <a href="apply.html">Apply/Contact</a>
+    <!-- <a href="gallery.html">Gallery</a> -->
+  </nav>
+</header>

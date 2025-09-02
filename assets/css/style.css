@@ -1,0 +1,261 @@
+/*
+ * Stylesheet for the AIDA (AI‑aided Design Automation) lab website.
+ */
+
+/* Colour palette */
+:root {
+  --primary: #1a2b49;       /* header/nav bg */
+  --secondary: #3d5a80;     /* accents */
+  --accent: #ee6c4d;        /* accent (borders/hover) */
+  --light-bg: #f5f8fc;      /* page bg */
+  --text-colour: #333333;   /* body text */
+  --heading-colour: #1a2b49;
+  --publication: #40667c;   /* [Jx]/[Cx] labels */
+}
+
+/* Global reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  color: var(--text-colour);
+  background-color: var(--light-bg);
+  scroll-behavior: smooth;
+}
+
+/* Header & nav */
+header {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 { font-size: 1.6rem; font-weight: 600; }
+h1 a { color: inherit; text-decoration: none; }
+
+nav { display: flex; align-items: center; flex-wrap: wrap; }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.25rem 0;
+}
+nav a.current { font-weight: 600; border-bottom: 2px solid var(--accent); }
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: var(--accent);
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.3s;
+}
+nav a:hover::after { width: 100%; }
+
+/* Ensure dropdown can escape the header line */
+header, #nav-menu { position: relative; z-index: 1000; }
+#nav-menu { overflow: visible; }
+
+/* --- People dropdown (shared) --- */
+#nav-menu .has-submenu { position: relative; display: inline-block; }
+#nav-menu .submenu-parent {
+  background: none; border: 0; color: #fff; cursor: pointer;
+  font: inherit; padding: 0; margin-left: 1.5rem;
+}
+#nav-menu .submenu-parent::after { content: " ▾"; opacity: .85; }
+
+/* Dropdown panel (desktop default) */
+#nav-menu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%; left: 0;
+  min-width: 220px;
+  background: #fff; color: #222;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: .5rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+  padding: .4rem 0;
+  z-index: 2000;
+}
+#nav-menu .submenu li { list-style: none; }
+#nav-menu .submenu a {
+  display: block;
+  padding: .6rem .9rem;
+  text-decoration: none; color: #222; white-space: nowrap;
+}
+#nav-menu .submenu a:hover { background: rgba(0,0,0,.06); }
+
+/* Desktop: show submenu on hover/focus */
+@media (min-width: 900px) {
+  #nav-menu .has-submenu:hover > .submenu,
+  #nav-menu .has-submenu:focus-within > .submenu { display: block; }
+}
+
+/* --- Mobile nav as drawer + accordion (≤ 899px) --- */
+.menu-toggle { display: none; flex-direction: column; cursor: pointer; }
+.menu-toggle span { height: 3px; width: 25px; background: #fff; margin: 4px 0; transition: .3s; }
+
+@media (max-width: 899px) {
+  .menu-toggle { display: flex; }
+
+  /* Drawer */
+  #nav-menu {
+    display: none;
+    position: fixed;
+    inset: 0 0 auto 0;
+    background: var(--primary);             /* match desktop blue */
+    padding: 72px 16px 24px;
+    max-height: 100svh;
+    overflow-y: auto;
+    box-shadow: 0 30px 60px rgba(0,0,0,.35);
+  }
+  #nav-menu.active { display: block; }
+
+  /* Lock page scroll when open */
+  body.nav-open { overflow: hidden; }
+
+  /* Tap targets */
+  #nav-menu a, #nav-menu .submenu-parent {
+    display: block;
+    padding: 14px 8px;
+    font-size: 1.05rem;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Submenu as accordion */
+  #nav-menu .has-submenu { display: block; }
+  #nav-menu .submenu-parent {
+    text-align: left; width: 100%;
+  }
+  #nav-menu .submenu-parent::after {
+    content: "▾"; float: right; opacity: .8; transition: transform .2s ease;
+  }
+  #nav-menu .has-submenu.open .submenu-parent::after { transform: rotate(180deg); }
+
+  #nav-menu .submenu {
+    position: static;
+    display: none;
+    margin: 6px 0 10px 0;
+    padding: 6px 0;
+    background: #fff;                       /* white panel for consistency */
+    color: #222;
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.12);
+  }
+  #nav-menu .has-submenu.open > .submenu { display: block; }
+
+  #nav-menu .submenu a {
+    display: block;
+    padding: 10px 12px;
+    color: #222;
+    background: transparent;
+    text-decoration: none;
+  }
+  #nav-menu .submenu a:hover { background: rgba(0,0,0,.06); border-radius: 6px; }
+}
+
+/* Hero */
+.hero {
+  background: url('../images/hero.png') center/cover no-repeat;
+  min-height: 60vh;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; text-align: center; padding: 2rem; position: relative;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0; background: rgba(0,0,0,.4); z-index: 0;
+}
+.hero .hero-content { position: relative; z-index: 1; max-width: 800px; }
+.hero h2 { font-size: 2.4rem; margin-bottom: 1rem; font-weight: 700; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,.5); }
+.hero p  { font-size: 1.2rem; color: #f8f8f8; text-shadow: 0 1px 3px rgba(0,0,0,.5); }
+
+/* Container */
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
+
+/* Section headings */
+section h2 {
+  color: var(--heading-colour);
+  margin-bottom: 0.75rem;
+  font-size: 1.8rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 0.6rem;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.card {
+  background: #fff; border-radius: 8px; overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,.05);
+  transition: transform .3s; display: flex; flex-direction: column;
+}
+.card:hover { transform: translateY(-4px); }
+.card img { width: 100%; height: 160px; object-fit: cover; }
+.card .card-content { padding: 1rem; flex: 1; }
+.card .card-content h3 { margin-bottom: .5rem; font-size: 1.3rem; color: var(--primary); }
+.card .card-content p  { font-size: .95rem; line-height: 1.4; }
+
+/* People page */
+.profile {
+  display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 2rem;
+}
+.profile img {
+  width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; background: #e0e0e0;
+}
+.profile h3 { font-size: 1.4rem; color: var(--primary); margin-bottom: .5rem; }
+.profile p  { font-size: .95rem; max-width: 600px; }
+
+/* Publications table */
+.pub-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: .9rem; }
+.pub-table th, .pub-table td { padding: .75rem; border-bottom: 1px solid #ddd; }
+.pub-table th { background: var(--secondary); color: #fff; text-align: left; }
+.pub-table tr:nth-child(even) { background: #f9f9f9; }
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: .85rem;
+  margin-top: 2rem;
+}
+
+/* Lists inside content */
+.container ul { list-style-position: inside; padding-left: 1rem; margin-left: 0; }
+
+/* Custom counters: Journal/Conference */
+.journal-list { counter-reset: journal; list-style: none; padding-left: 2.5rem; }
+.journal-list li {
+  counter-increment: journal; position: relative; margin-bottom: .75rem; padding-left: 2rem;
+}
+.journal-list li::before {
+  content: "[J" counter(journal) "] ";
+  position: absolute; left: -0.7rem; font-weight: bold; color: var(--publication);
+}
+
+.conference-list { counter-reset: conference; list-style: none; padding-left: 2.5rem; }
+.conference-list li {
+  counter-increment: conference; position: relative; margin-bottom: .75rem; padding-left: 2rem;
+}
+.conference-list li::before {
+  content: "[C" counter(conference) "] ";
+  position: absolute; left: -0.7rem; font-weight: bold; color: var(--publication);
+}
