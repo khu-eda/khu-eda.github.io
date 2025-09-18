@@ -244,7 +244,7 @@ footer {
 /* Custom counters: Journal/Conference */
 .journal-list { counter-reset: journal; list-style: none; padding-left: 2.5rem; }
 .journal-list li {
-  counter-increment: journal; position: relative; margin-bottom: .75rem; padding-left: 2rem;
+  counter-increment: journal; position: relative; margin-bottom: .75rem; padding-left: 2rem; 
 }
 .journal-list li::before {
   content: "[J" counter(journal) "] ";
