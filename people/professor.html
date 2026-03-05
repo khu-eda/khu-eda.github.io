@@ -5,45 +5,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professor – AIDA Lab</title>
   <link rel="stylesheet" href="../assets/css/style.css">
-  <meta name="description" content="Meet the professor leading the AI‑aided Design Automation (AIDA) Lab at Kyung Hee University.">
 </head>
 <body>
-  <div id="header-placeholder"></div>
+<div id="header-placeholder"></div>
 
-  <section class="container">
-    <h2>Professor</h2>
-    <div class="profile">
-      <img src="../assets/images/professor.JPG" alt="Professor portrait placeholder">
-      <h3>Assistant Professor, AIDA Lab</h3>
+<div class="container">
+
+  <!-- Hero Card -->
+  <div class="prof-hero">
+    <img src="../assets/images/professor.JPG" alt="Prof. Suwan Kim"
+         onerror="this.style.display='none'">
+    <div class="prof-hero-info">
+      <span class="dept-badge">College of Electronics &amp; Information · Kyung Hee University</span>
+      <h1>Suwan Kim <span class="kr">김수완</span></h1>
+      <p class="prof-title">Assistant Professor &nbsp;·&nbsp; AIDA Lab</p>
+
       <p>
-        Starting on <time datetime="2025-09-01">1&nbsp;September&nbsp;2025</time>, Suwan Kim joins the
-        <strong>College of Electronics and Information at Kyung Hee University</strong> as an Assistant Professor.
-		
-	  </p>
-	  <p>
-		He received B.S. degrees in electrical and computer engineering and naval architecture and ocean engineering from Seoul National University, Seoul, South Korea, in 2019. 
-		He completed his Ph.D. degree in electrical and computer engineering from Seoul National University in 2024. 
-		He also worked as a staff engineer at the Samsung Advanced Institute of Technology.
-		His research areas include, but are not limited to, machine learning for computer-aided design, design technology co-optimization, and design methodology for advanced nodes.
-		
-		<!--They lead the AI‑aided Design Automation (AIDA) Lab and are passionate about merging artificial intelligence with
-        automated design processes.  Their research interests span generative design, machine‑learning based optimisation,
-        electronic design automation and interactive human–AI collaboration in engineering.-->
+        Suwan Kim is an Assistant Professor in the College of Electronic Engineering at
+        Kyung Hee University (September 2025–), where he leads the
+        <strong>AI-aided Design Automation (AIDA) Lab</strong>.
       </p>
-      <!--p>
-        Before joining Kyung Hee University, our PI completed a Ph.D. focused on AI‑driven design automation and
-        subsequently held research positions in academia and industry.  They have published papers in major conferences and
-        journals on topics ranging from generative models for CAD to hardware‑accelerated design tools.  They are
-        committed to fostering a collaborative and inclusive research environment, mentoring students and pushing the
-        boundaries of AI‑driven design.
-      </p-->
       <p>
-        <strong>Contact:</strong> <a href="mailto:suwankim@khu.ac.kr">suwankim@khu.ac.kr</a>
+        He received B.S. degrees in Electrical &amp; Computer Engineering and Naval Architecture
+        &amp; Ocean Engineering from Seoul National University (2019), and a Ph.D. in Electrical
+        &amp; Computer Engineering from Seoul National University (2024).
+        Prior to joining KHU, he was a Staff Engineer at the Samsung Advanced Institute of Technology.
       </p>
+      <p>
+        His research focuses on machine learning for EDA, design technology co-optimization (DTCO),
+        and design methodology for advanced semiconductor nodes.
+      </p>
+
+      <div class="contact-pills">
+        <a class="contact-pill" href="mailto:suwankim@khu.ac.kr">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+          suwankim@khu.ac.kr
+        </a>
+        <a class="contact-pill" href="https://khu-eda.github.io" target="_blank" rel="noopener">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+          AIDA Lab
+        </a>
+        <a class="contact-pill" href="https://scholar.google.com/citations?user=_ah9sF0AAAAJ&hl=ko&oi=ao" target="_blank" rel="noopener">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.42a12 12 0 0 1 .84 4.18 12 12 0 0 1-14 0 12 12 0 0 1 .84-4.18L12 14z"/></svg>
+          Google Scholar
+        </a>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <div id="footer-placeholder"></div>
-  <script src="../assets/js/include.js"></script>
+  <!-- Research Interests -->
+  <div class="section-box">
+    <h2>Research Interests</h2>
+    <div class="interest-tags">
+      <span class="i-tag">Machine Learning for EDA</span>
+      <span class="i-tag">Design Technology Co-Optimization (DTCO)</span>
+      <span class="i-tag">Advanced Technology (CFET, Monolithic 3D)</span>
+      <span class="i-tag">Reinforcement Learning for Circuit Optimization</span>
+      <span class="i-tag">Neural Operators for Parasitic Extraction</span>
+      <span class="i-tag">AI-driven Standard Cell Library Generation</span>
+      <span class="i-tag">Physical Verification (DRC / LVS / RCX)</span>
+      <span class="i-tag">TCAD to SPICE Model Extraction</span>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="section-box">
+    <h2>Education</h2>
+    <div class="tl">
+      <div class="tl-row">
+        <span class="tl-date">2019 – 2024</span>
+        <div class="tl-body">
+          <strong>Ph.D. in Electrical &amp; Computer Engineering</strong>
+          <span>Seoul National University, Seoul, Korea</span>
+        </div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-date">2013 – 2019</span>
+        <div class="tl-body">
+          <strong>B.S. in Electrical &amp; Computer Engineering</strong>
+          <span>Seoul National University, Seoul, Korea &nbsp;(double major: Naval Architecture &amp; Ocean Engineering)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Work Experience -->
+  <div class="section-box">
+    <h2>Work Experience</h2>
+    <div class="tl">
+      <div class="tl-row">
+        <span class="tl-date">2025.09 –</span>
+        <div class="tl-body">
+          <strong>Assistant Professor</strong>
+          <span>College of Electronic Engineering, Kyung Hee University, Korea</span>
+        </div>
+      </div>
+      <div class="tl-row">
+        <span class="tl-date">2024 – 2025</span>
+        <div class="tl-body">
+          <strong>Staff Engineer</strong>
+          <span>Samsung Advanced Institute of Technology (SAIT), Korea</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Profile -->
+  <div class="section-box">
+    <h2>Profile</h2>
+    <div class="info-table">
+      <span class="info-key">Name</span>
+      <span class="info-val">Suwan Kim (김수완)</span>
+      <span class="info-key">E-mail</span>
+      <span class="info-val"><a href="mailto:suwankim@khu.ac.kr">suwankim@khu.ac.kr</a></span>
+      <span class="info-key">Lab</span>
+      <span class="info-val"><a href="https://khu-eda.github.io" target="_blank" rel="noopener">AIDA Lab</a></span>
+      <span class="info-key">Institution</span>
+      <span class="info-val">Kyung Hee University, Yongin-si, Gyeonggi-do, Korea</span>
+    </div>
+  </div>
+
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="../assets/js/include.js"></script>
 </body>
 </html>
