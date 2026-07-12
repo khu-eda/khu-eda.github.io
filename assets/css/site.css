@@ -347,9 +347,9 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
 /* .area p sets 0.93rem, so these must out-specify it */
 .area .tname {
   margin: 0;
-  font-family: var(--font-mono); font-size: 0.62rem; font-weight: 400;
-  letter-spacing: 0.05em; text-transform: uppercase;
-  color: var(--muted);
+  font-family: var(--font-sans); font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0; text-transform: none;
+  color: var(--ink-2);
 }
 .area .tpubs { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
 .tpubs a {
