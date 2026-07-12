@@ -390,6 +390,11 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
   border: 1px solid var(--chip-conf); color: var(--chip-conf);
 }
 .venue-chip.jrnl { border-color: var(--chip-jrnl); color: var(--chip-jrnl); }
+.topic-chip {
+  font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.04em;
+  padding: 2px 8px;
+  border: 1px solid var(--line); color: var(--muted);
+}
 .rate-chip {
   font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.02em;
   padding: 0; color: var(--muted); opacity: 0.85;
