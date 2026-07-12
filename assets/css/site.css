@@ -268,7 +268,7 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
 .news-tag.paper { --h: var(--accent); }
 .news-tag.talk  { --h: var(--chip-jrnl); }
 .news-tag.lab   { --h: var(--muted); }
-.news-link { color: var(--accent); text-decoration: none; }
+.news-link { color: var(--accent); font-weight: 400; text-decoration: none; }
 .news-link:hover { color: var(--accent-hover); background: var(--hl); }
 .news-link:hover strong { text-decoration: underline; text-underline-offset: 2px; }
 
