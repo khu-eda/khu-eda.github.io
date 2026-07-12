@@ -1,99 +1,195 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Publications – AIDA Lab</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <meta name="description" content="List of publications from the AI‑aided Design Automation (AIDA) Lab.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications · AIDA Lab · Kyung Hee University</title>
+<meta name="description" content="Publications of AIDA Lab at DAC, ICCAD, DATE, ISPD, ISLPED, ASP-DAC, and TCAD.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230C1017'/%3E%3Crect x='6' y='7' width='3' height='18' fill='%23CE5540'/%3E%3Crect x='14' y='7' width='3' height='18' fill='%23CE5540'/%3E%3Crect x='22' y='7' width='3' height='18' fill='%23CE5540'/%3E%3Crect x='4' y='12' width='24' height='4' fill='%234E7FE1'/%3E%3Crect x='13' y='20' width='10' height='3' fill='%23C94F8C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-  <div id="header-placeholder"></div>
+<nav class="nav" aria-label="Main">
+  <div class="wrap nav-inner">
+    <a class="wordmark" href="index.html">
+      AIDA Lab
+      <small>Kyung Hee<br>University</small>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <div class="nav-drop">
+        <a href="professor.html" aria-haspopup="true">People<span class="caret" aria-hidden="true">▾</span></a>
+        <div class="nav-menu">
+          <a href="professor.html">Professor</a>
+          <a href="students.html">Students</a>
+        </div>
+      </div>
+      <!-- Gallery: enable when photos are ready -->
+      <!-- <a href="gallery.html">Gallery</a> -->
+      <a href="contact.html">Contact</a>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle color theme" title="Toggle theme">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<main>
+<section class="page-head wrap">
+  <h1>Publications</h1>
+</section>
 
-  <section class="container">
-    <h2>Publications</h2><br>
-
-    <h3>International Journals</h3><br>
-
-    <ul class="journal-list">
-      <li> <strong>Suwan Kim</strong>, Taewhan Kim.<br>
-         “CFET-FP: Complementary FET Standard Cell Synthesis with Optimal Transistor Folding and Placement for Design and Technology Co-optimization.” <br>
-         <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</em>, (Accepted)</li>
-
-      <li> <strong>Suwan Kim</strong>, Taewhan Kim.<br>
-         “Design and Utilization of Multi-skewed Multi-bit Flip-flop Cells for Timing Optimization: Design and Technology Co-optimization.” <br>
-         <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</em>, March 2025.</li>
-
-      <li> Hyunbum Park, Kyeonghyeon Baek, <strong>Suwan Kim</strong>, Kyumyung Choi, Taewhan Kim. <br>
-        “Pin Accessibility and Routing Congestion Aware Design Rule Checking Hotspot Prediction for Designs in Advanced Technology Nodes With Consolidated Practical Applicability and Sustainability.” <br>
-        <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD) </em>, December 2024.</li>
-
-      <li> <strong>Suwan Kim</strong>, Heechun Park. <br>
-        “Comprehensive Physical Design Flow Incorporating Three-Dimensional Connections for Monolithic Three-Dimensional Integrated Circuits.” <br>
-        <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</em>, July 2024.</li>
-
-      <!--li><strong>[Under Review]</strong> <strong>Suwan Kim</strong>, Taewhan Kim. “Complementary Field-Effect Transistor Standard Cell Synthesis with Optimal Transistor Folding and Placement for Design and Technology Co-optimization.” <em>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</em>.</li><br-->
+<section class="wrap" aria-label="Publication list">
+  <div class="pub-year">
+    <h3>2026</h3>
+    <ul>
+      <li id="pub-atlas">
+        <div class="pub-tags"><span class="venue-chip">ICCAD 2026</span></div>
+        <p class="pub-title">ATLAS: Adaptive TDA-guided Landscape-Aware Transistor Sizing</p>
+        <p class="pub-authors">Youngmin Oh, Jihwan Won, Yuntae Park, Bosun Hwang, <b>Suwan Kim</b></p>
+        <p class="pub-venue-full">IEEE/ACM International Conference on Computer-Aided Design</p>
+      </li>
+      <li id="pub-hyperanalog">
+        <div class="pub-tags"><span class="venue-chip">DAC 2026</span></div>
+        <p class="pub-title">HyperAnalog: Domain-Aware Hypergraph Transformer for Analog Circuit Representation Learning</p>
+        <p class="pub-authors">Taejin Paik, <b>Suwan Kim</b></p>
+        <p class="pub-venue-full">ACM/IEEE Design Automation Conference</p>
+      </li>
+      <li id="pub-cfet-fp">
+        <div class="pub-tags"><span class="venue-chip jrnl">TCAD</span></div>
+        <p class="pub-title">CFET-FP: Complementary FET Standard Cell Synthesis with Optimal Transistor Folding and Placement for Design and Technology Co-optimization</p>
+        <p class="pub-authors"><b>Suwan Kim</b>, Taewhan Kim</p>
+        <p class="pub-venue-full">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</p>
+      </li>
     </ul>
-<br>
-    <h3>International Conferences</h3><br>
-    <ul class="conference-list">
-      <li>Taejin Paik, <strong>Suwan Kim.</strong><br>
-        “HyperAnalog: Domain-Aware Hypergraph Transformer for Analog Circuit Representation Learning.” <br>
-        <em>IEEE/ACM Design Automation Conference (DAC)</em>, July 2026.</li>
+  </div>
 
-      <li> Youngmin Oh, Jinje Park, Taejin Paik, Seunggeun Kim, <strong>Suwan Kim</strong>, Yoon Hyeok Lee, David Z. Pan. <br>
-        “Mamba-assisted Multi-Circuit Optimization via Model-based Reinforcement Learning with Effective Scheduling.” <br>
-        <em>IEEE/ACM International Conference on Computer-Aided Design (ICCAD)</em>, October 2025.</li>
-
-      <li> Cheng-Yu Tsai, <strong>Suwan Kim</strong>, Sung Kyu Lim. <br>
-        “Capacitance Extraction via Machine Learning with Application to Interconnect Geometry Exploration.” <br>
-        <em>IEEE/ACM International Conference on Computer-Aided Design (ICCAD)</em>, October 2025.</li>
-
-      <li> <strong>Suwan Kim</strong>, Taewhan Kim. <br>
-        “Optimal Transistor Folding and Placement for Synthesizing Standard Cells of Complementary Field-Effect Transistor Technology.” <br>
-        <em>IEEE/ACM Design Automation Conference (DAC)</em>, June 2024.</li>
-
-      <li> <strong>Suwan Kim</strong>, Hyunbum Park, Kyeonghyeon Baek, Kyumyung Choi, Taewhan Kim. <br>
-        “Methodology of Resolving Design Rule Checking Violations Coupled with Fully Compatible Prediction Model.” <br>
-        <em>ACM International Symposium on Physical Design (ISPD)</em>, March 2024.</li>
-
-      <li> <strong>Suwan Kim</strong>, Taewhan Kim. <br>
-        “Design and Technology Co-optimization for Useful Skew Scheduling on Multi-bit Flip-flops.” <br>
-        <em>IEEE/ACM International Conference on Computer-Aided Design (ICCAD)</em>, October 2023.</li>
-
-      <li> Kyeonghyeon Baek, Hyunbum Park, <strong>Suwan Kim</strong>, Kyumyung Choi, Taewhan Kim. <br>
-        “Pin Accessibility and Routing Congestion Aware Design Rule Checking Hotspot Prediction using Graph Neural Network and U-Net.” <br>
-        <em>IEEE/ACM International Conference on Computer-Aided Design (ICCAD)</em>, October 2022.</li>
-
-      <li> <strong>Suwan Kim</strong>, Sehyeon Chung, Taewhan Kim, Heechun Park. <br>
-        “Tightly Linking Three-Dimensional Via Allocation towards Routing Optimization for Monolithic Three-Dimensional Integrated Circuits.” <br>
-        <em>IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED)</em>, August 2022.</li>
-
-      <li> <strong>Suwan Kim</strong>, Taewhan Kim. <br>
-        “Pin Accessibility-driven Placement Optimization with Accurate and Comprehensive Prediction Model.” <br>
-        <em>IEEE/ACM Design, Automation and Test in Europe Conference (DATE)</em>, March 2022.</li>
-
-      <li> <strong>Suwan Kim</strong>, Taewhan Kim. <br>
-        “Practical Approach to Cell Replacement for Resolving Pin Inaccessibility.” <br>
-        <em>EEE Midwest Symposium on Circuits and Systems (MWSCAS)</em>, August 2021.</li>
-
-      <li> <strong>Suwan Kim</strong>, Kyeongrok Jo, Taewhan Kim. <br>
-        “Boosting Pin Accessibility Through Cell Layout Topology Diversification.” <br>
-        <em>IEEE Asia and South Pacific Design Automation Conference (ASP-DAC)</em>, January 2021.</li>
-
+  <div class="pub-year">
+    <h3>2025</h3>
+    <ul>
+      <li id="pub-m3">
+        <div class="pub-tags"><span class="venue-chip">ICCAD 2025</span></div>
+        <p class="pub-title">M3: Mamba-assisted Multi-Circuit Optimization via Model-based RL with Effective Scheduling</p>
+        <p class="pub-authors">Youngmin Oh, Jinje Park, Taejin Paik, Seunggeun Kim, <b>Suwan Kim</b>, Yoon Hyeok Lee, David Z. Pan</p>
+        <p class="pub-venue-full">IEEE/ACM International Conference on Computer-Aided Design</p>
+      </li>
+      <li id="pub-capacitance">
+        <div class="pub-tags"><span class="venue-chip">ICCAD 2025</span></div>
+        <p class="pub-title">Capacitance Extraction via Machine Learning with Application to Interconnect Geometry Exploration</p>
+        <p class="pub-authors">Cheng-Yu Tsai, <b>Suwan Kim</b>, Sung Kyu Lim</p>
+        <p class="pub-venue-full">IEEE/ACM International Conference on Computer-Aided Design</p>
+      </li>
+      <li id="pub-mbff-tcad25">
+        <div class="pub-tags"><span class="venue-chip jrnl">TCAD</span></div>
+        <p class="pub-title">Design and Utilization of Multi-skewed Multi-bit Flip-flop Cells for Timing Optimization: Design and Technology Co-optimization</p>
+        <p class="pub-authors"><b>Suwan Kim</b>, Taewhan Kim</p>
+        <p class="pub-venue-full">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</p>
+      </li>
     </ul>
-<br>
-    <!--h3>Domestic Conferences</h3><br>
-    <ul class="conference-list">
-      <li><strong>Suwan Kim</strong>, Taewhan Kim. <br>
-        “Timing Improvement through Cell Replacement at Engineering Change Order Routing.” <br>
-        <em>Autumn Annual Conference of Institute of Electronics and Information Engineers (IEIE)</em>, January 2021.</li><br>
-    </ul-->
-  </section>
+  </div>
 
-  <div id="footer-placeholder"></div>
-<script src="assets/js/include.js"></script>
+  <div class="pub-year">
+    <h3>2024</h3>
+    <ul>
+      <li id="pub-cfet-dac24">
+        <div class="pub-tags"><span class="venue-chip">DAC 2024</span></div>
+        <p class="pub-title">Optimal Transistor Folding and Placement for Synthesizing Standard Cells of Complementary FET Technology</p>
+        <p class="pub-authors"><b>Suwan Kim</b>, Taewhan Kim</p>
+        <p class="pub-venue-full">ACM/IEEE Design Automation Conference</p>
+      </li>
+      <li id="pub-drv-ispd24">
+        <div class="pub-tags"><span class="venue-chip">ISPD 2024</span></div>
+        <p class="pub-title">Methodology of Resolving Design Rule Checking Violations Coupled with Fully Compatible Prediction Model</p>
+        <p class="pub-authors"><b>Suwan Kim</b>, Hyunbum Park, Kyeonghyeon Baek, Kyumyung Choi, Taewhan Kim</p>
+        <p class="pub-venue-full">ACM International Symposium on Physical Design</p>
+      </li>
+      <li id="pub-drc-tcad24">
+        <div class="pub-tags"><span class="venue-chip jrnl">TCAD</span></div>
+        <p class="pub-title">Pin Accessibility and Routing Congestion Aware DRC Hotspot Prediction for Designs in Advanced Technology Nodes With Consolidated Practical Applicability and Sustainability</p>
+        <p class="pub-authors">Hyunbum Park, Kyeonghyeon Baek, <b>Suwan Kim</b>, Kyumyung Choi, Taewhan Kim</p>
+        <p class="pub-venue-full">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</p>
+      </li>
+      <li id="pub-m3d-tcad24">
+        <div class="pub-tags"><span class="venue-chip jrnl">TCAD</span></div>
+        <p class="pub-title">Comprehensive Physical Design Flow Incorporating 3D Connections for Monolithic 3D ICs</p>
+        <p class="pub-authors"><b>Suwan Kim</b>, Heechun Park</p>
+        <p class="pub-venue-full">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</p>
+      </li>
+    </ul>
+  </div>
 
+  <div class="pub-year">
+    <h3>2023</h3>
+    <ul>
+      <li id="pub-mbff-iccad23">
+        <div class="pub-tags"><span class="venue-chip">ICCAD 2023</span></div>
+        <p class="pub-title">Design and Technology Co-optimization for Useful Skew Scheduling on Multi-bit Flip-flops</p>
+        <p class="pub-authors"><b>Suwan Kim</b>, Taewhan Kim</p>
+        <p class="pub-venue-full">IEEE/ACM International Conference on Computer-Aided Design</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="pub-year">
+    <h3>2022</h3>
+    <ul>
+      <li id="pub-drc-iccad22">
+        <div class="pub-tags"><span class="venue-chip">ICCAD 2022</span></div>
+        <p class="pub-title">Pin Accessibility and Routing Congestion Aware DRC Hotspot Prediction using Graph Neural Network and U-Net</p>
+        <p class="pub-authors">Kyeonghyeon Baek, Hyunbum Park, <b>Suwan Kim</b>, Kyumyung Choi, Taewhan Kim</p>
+        <p class="pub-venue-full">IEEE/ACM International Conference on Computer-Aided Design</p>
+      </li>
+      <li id="pub-3dvia-islped22">
+        <div class="pub-tags"><span class="venue-chip">ISLPED 2022</span></div>
+        <p class="pub-title">Tightly Linking 3D via Allocation towards Routing Optimization for Monolithic 3D ICs</p>
+        <p class="pub-authors"><b>Suwan Kim</b>, Sehyeon Chung, Taewhan Kim, Heechun Park</p>
+        <p class="pub-venue-full">ACM/IEEE International Symposium on Low Power Electronics and Design</p>
+      </li>
+      <li id="pub-pin-date22">
+        <div class="pub-tags"><span class="venue-chip">DATE 2022</span></div>
+        <p class="pub-title">Pin Accessibility-driven Placement Optimization with Accurate and Comprehensive Prediction Model</p>
+        <p class="pub-authors"><b>Suwan Kim</b>, Taewhan Kim</p>
+        <p class="pub-venue-full">IEEE/ACM Design, Automation and Test in Europe Conference</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="pub-year">
+    <h3>2021</h3>
+    <ul>
+      <li id="pub-cell-mwscas21">
+        <div class="pub-tags"><span class="venue-chip">MWSCAS 2021</span></div>
+        <p class="pub-title">Practical Approach to Cell Replacement for Resolving Pin Inaccessibility</p>
+        <p class="pub-authors"><b>Suwan Kim</b>, Taewhan Kim</p>
+        <p class="pub-venue-full">IEEE International Midwest Symposium on Circuits and Systems</p>
+      </li>
+      <li id="pub-pin-aspdac21">
+        <div class="pub-tags"><span class="venue-chip">ASP-DAC 2021</span></div>
+        <p class="pub-title">Boosting Pin Accessibility Through Cell Layout Topology Diversification</p>
+        <p class="pub-authors"><b>Suwan Kim</b>, Kyeongrok Jo, Taewhan Kim</p>
+        <p class="pub-venue-full">IEEE/ACM Asia and South Pacific Design Automation Conference</p>
+      </li>
+    </ul>
+  </div>
+
+</section>
+</main>
+<footer class="wrap">
+  <div class="foot">
+    <div>
+      <p><b>AIDA Lab</b> · AI-aided Design Automation Laboratory</p>
+      <p>Room 7031, Woojungwon Bldg., Kyung Hee University</p>
+      <p>1732, Deogyeong-daero, Giheung-gu, Yongin-si, Gyeonggi-do, Republic of Korea, 17104</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
 </body>
 </html>

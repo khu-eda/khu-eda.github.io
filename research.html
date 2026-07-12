@@ -1,193 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research – AIDA Lab</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <meta name="description" content="Research at AIDA Lab: ML for EDA, DTCO, advanced node design methodology, reinforcement learning for circuit optimization, and neural operators for parasitic extraction.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · AIDA Lab · Kyung Hee University</title>
+<meta name="description" content="Research areas of AIDA Lab: DTCO and standard-cell synthesis, ML-driven physical design, monolithic 3D ICs, AI for circuit optimization, and interconnect and parasitic modeling.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230C1017'/%3E%3Crect x='6' y='7' width='3' height='18' fill='%23CE5540'/%3E%3Crect x='14' y='7' width='3' height='18' fill='%23CE5540'/%3E%3Crect x='22' y='7' width='3' height='18' fill='%23CE5540'/%3E%3Crect x='4' y='12' width='24' height='4' fill='%234E7FE1'/%3E%3Crect x='13' y='20' width='10' height='3' fill='%23C94F8C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
-<div id="header-placeholder"></div>
-
-<section class="container">
-  <div class="section-hd"><h2>Research</h2><div class="hd-line"></div></div>
-  <p class="section-intro">
-    The AIDA Lab investigates next-generation methods for automating and optimizing electronic design.
-    Our work combines machine learning, optimization theory, and circuit design principles to address
-    challenges in design productivity, quality, and scalability for advanced semiconductor processes.
-  </p>
-
-  <div class="cards" style="margin-top:1.5rem;">
-
-    <!-- Theme 1 -->
-    <div class="card">
-      <div class="card-visual cv-eda">
-        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="30" cy="40" r="8" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="2"/>
-          <circle cx="30" cy="80" r="8" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="2"/>
-          <circle cx="30" cy="120" r="8" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="2"/>
-          <circle cx="80" cy="55" r="8" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="2"/>
-          <circle cx="80" cy="105" r="8" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="2"/>
-          <circle cx="130" cy="80" r="10" fill="rgba(238,108,77,.7)" stroke="rgba(238,108,77,.9)" stroke-width="2"/>
-          <line x1="38" y1="40" x2="72" y2="55" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
-          <line x1="38" y1="80" x2="72" y2="55" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
-          <line x1="38" y1="80" x2="72" y2="105" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
-          <line x1="38" y1="120" x2="72" y2="105" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
-          <line x1="88" y1="55" x2="120" y2="80" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
-          <line x1="88" y1="105" x2="120" y2="80" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
+<nav class="nav" aria-label="Main">
+  <div class="wrap nav-inner">
+    <a class="wordmark" href="index.html">
+      AIDA Lab
+      <small>Kyung Hee<br>University</small>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <div class="nav-drop">
+        <a href="professor.html" aria-haspopup="true">People<span class="caret" aria-hidden="true">▾</span></a>
+        <div class="nav-menu">
+          <a href="professor.html">Professor</a>
+          <a href="students.html">Students</a>
+        </div>
+      </div>
+      <!-- Gallery: enable when photos are ready -->
+      <!-- <a href="gallery.html">Gallery</a> -->
+      <a href="contact.html">Contact</a>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle color theme" title="Toggle theme">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"></path>
         </svg>
-      </div>
-      <div class="card-content">
-        <h3>AI-aided Design Automation</h3>
-        <p>
-          We develop intelligent algorithms that learn from historical design data to guide
-          decision-making across digital and analog design flows.
-          By combining graph neural networks, transformers, and reinforcement learning with
-          classical EDA heuristics, our approaches achieve faster convergence to optimized
-          solutions with fewer costly simulation iterations.
-        </p>
-        <span class="card-tag">GNN · Transformer · RL · EDA</span>
-      </div>
+      </button>
     </div>
-
-    <!-- Theme 2 -->
-    <div class="card">
-      <div class="card-visual cv-dtco">
-        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="20" y="58" width="120" height="8" rx="2" fill="rgba(255,255,255,.25)"/>
-          <rect x="20" y="71" width="120" height="8" rx="2" fill="rgba(255,255,255,.18)"/>
-          <rect x="20" y="84" width="120" height="8" rx="2" fill="rgba(255,255,255,.12)"/>
-          <rect x="42" y="38" width="14" height="62" rx="5" fill="rgba(255,200,80,.45)"/>
-          <rect x="73" y="38" width="14" height="62" rx="5" fill="rgba(255,200,80,.45)"/>
-          <rect x="104" y="38" width="14" height="62" rx="5" fill="rgba(255,200,80,.45)"/>
-          <line x1="80" y1="18" x2="80" y2="38" stroke="rgba(255,255,255,.5)" stroke-width="2"/>
-          <rect x="64" y="10" width="32" height="10" rx="3" fill="rgba(255,255,255,.2)"/>
-          <text x="80" y="130" text-anchor="middle" fill="rgba(255,255,255,.35)" font-size="9" font-family="monospace">DTCO · Cell Gen.</text>
-        </svg>
-      </div>
-      <div class="card-content">
-        <h3>Design Technology Co-Optimization (DTCO)</h3>
-        <p>
-          DTCO is essential for pushing the density and performance limits of modern semiconductors.
-          We co-optimize standard cell architectures, power/signal routing strategies, and
-          physical constraints with technology-specific rules.
-          Our work includes AI-driven standard cell layout generation and metal-fill-aware library optimization.
-        </p>
-        <span class="card-tag">DTCO · Std. Cell · Physical Design</span>
-      </div>
-    </div>
-
-    <!-- Theme 3 -->
-    <div class="card">
-      <div class="card-visual cv-node">
-        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="55" y="28" width="50" height="13" rx="6.5" fill="none" stroke="rgba(100,200,255,.65)" stroke-width="2"/>
-          <rect x="55" y="48" width="50" height="13" rx="6.5" fill="none" stroke="rgba(100,200,255,.65)" stroke-width="2"/>
-          <rect x="55" y="68" width="50" height="13" rx="6.5" fill="none" stroke="rgba(255,150,100,.65)" stroke-width="2"/>
-          <rect x="55" y="88" width="50" height="13" rx="6.5" fill="none" stroke="rgba(255,150,100,.65)" stroke-width="2"/>
-          <rect x="43" y="24" width="8" height="82" rx="3" fill="rgba(255,255,255,.2)"/>
-          <rect x="109" y="24" width="8" height="82" rx="3" fill="rgba(255,255,255,.2)"/>
-          <text x="80" y="128" text-anchor="middle" fill="rgba(255,255,255,.4)" font-size="9" font-family="monospace">nFET / pFET · CFET</text>
-        </svg>
-      </div>
-      <div class="card-content">
-        <h3>Advanced Node Design Methodology</h3>
-        <p>
-          As technology scales below 3 nm, new device architectures — GAA nanosheets, CFET
-          (complementary FET) — demand entirely new design methodologies.
-          We develop process design kits (PDK), LVS/DRC/RCX rule frameworks, and
-          TCAD-to-SPICE extraction flows for these emerging technologies.
-        </p>
-        <span class="card-tag">GAA · CFET · PDK · 3 nm</span>
-      </div>
-    </div>
-
-    <!-- Theme 4 -->
-    <div class="card">
-      <div class="card-visual cv-rl">
-        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- RL loop diagram -->
-          <rect x="50" y="60" width="60" height="40" rx="6" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.4)" stroke-width="1.5"/>
-          <text x="80" y="85" text-anchor="middle" fill="rgba(255,255,255,.7)" font-size="10" font-family="sans-serif">Agent</text>
-          <path d="M110 68 Q135 40 135 80 Q135 120 110 112" stroke="rgba(238,108,77,.7)" stroke-width="1.5" fill="none" marker-end="url(#arr)"/>
-          <path d="M50 92 Q25 120 25 80 Q25 40 50 68" stroke="rgba(100,200,255,.6)" stroke-width="1.5" fill="none" marker-end="url(#arr2)"/>
-          <text x="148" y="82" fill="rgba(238,108,77,.8)" font-size="8" font-family="sans-serif">Reward</text>
-          <text x="2" y="82" fill="rgba(100,200,255,.8)" font-size="8" font-family="sans-serif">State</text>
-          <defs>
-            <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-              <path d="M0,0 L6,3 L0,6 Z" fill="rgba(238,108,77,.8)"/>
-            </marker>
-            <marker id="arr2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-              <path d="M0,0 L6,3 L0,6 Z" fill="rgba(100,200,255,.8)"/>
-            </marker>
-          </defs>
-        </svg>
-      </div>
-      <div class="card-content">
-        <h3>Reinforcement Learning for Circuit Optimization</h3>
-        <p>
-          We build RL-based optimization pipelines that iteratively improve circuit topologies
-          and sizing by exploring a design space with learned reward functions.
-          Applications include parasitic-aware SPICE optimization, standard cell PPA improvement,
-          and AutoCkt-style analog circuit sizing.
-        </p>
-        <span class="card-tag">RL · AutoCkt · SPICE · Analog</span>
-      </div>
-    </div>
-
-    <!-- Theme 5 -->
-    <div class="card">
-      <div class="card-visual cv-pex">
-        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Neural operator / waveform -->
-          <path d="M20 80 Q35 40 50 80 Q65 120 80 80 Q95 40 110 80 Q125 120 140 80" stroke="rgba(100,220,150,.6)" stroke-width="2" fill="none"/>
-          <path d="M20 80 Q35 55 50 80 Q65 105 80 80 Q95 55 110 80 Q125 105 140 80" stroke="rgba(255,200,80,.35)" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
-          <circle cx="80" cy="80" r="5" fill="rgba(100,220,150,.8)"/>
-          <text x="80" y="130" text-anchor="middle" fill="rgba(255,255,255,.4)" font-size="9" font-family="monospace">Neural Operator · PEX</text>
-        </svg>
-      </div>
-      <div class="card-content">
-        <h3>Neural Operators for Parasitic Extraction</h3>
-        <p>
-          Accurate parasitic extraction (PEX) is critical yet computationally expensive.
-          We train neural operator models (GNO, FNO, DeepONet) on GDS geometry–capacitance
-          dataset pairs to predict coupling capacitances in a fraction of the time of
-          traditional field solvers, enabling fast sign-off quality extraction.
-        </p>
-        <span class="card-tag">PEX · Neural Operators · GDS · ML</span>
-      </div>
-    </div>
-
-    <!-- Theme 6 -->
-    <div class="card">
-      <div class="card-visual cv-cell">
-        <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Standard cell floorplan icon -->
-          <rect x="20" y="30" width="50" height="30" rx="2" fill="rgba(255,255,255,.1)" stroke="rgba(255,200,80,.5)" stroke-width="1.5"/>
-          <rect x="20" y="68" width="50" height="20" rx="2" fill="rgba(255,255,255,.1)" stroke="rgba(255,200,80,.5)" stroke-width="1.5"/>
-          <rect x="78" y="30" width="62" height="58" rx="2" fill="rgba(255,255,255,.08)" stroke="rgba(100,200,255,.4)" stroke-width="1.5"/>
-          <rect x="20" y="96" width="120" height="16" rx="2" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
-          <line x1="20" y1="120" x2="140" y2="120" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
-          <text x="80" y="138" text-anchor="middle" fill="rgba(255,255,255,.4)" font-size="9" font-family="monospace">Cell Layout · GDS</text>
-        </svg>
-      </div>
-      <div class="card-content">
-        <h3>AI-driven Standard Cell Library Generation</h3>
-        <p>
-          We leverage GNN and PPO-based reinforcement learning to automate the generation
-          of power-performance-area optimized standard cell layouts.
-          Our approach targets metal-fill-aware placement for sub-3nm libraries and
-          integrates with Calibre DRC/LVS sign-off flows.
-        </p>
-        <span class="card-tag">GNN · PPO · Std. Cell Library</span>
-      </div>
-    </div>
-
   </div>
+</nav>
+<main>
+<section class="page-head wrap">
+  <p class="eyebrow">Research</p>
+  <h1>Embedding intelligence into the silicon design flow.</h1>
+  <p class="lead">
+    Chip design at advanced nodes is a search over an astronomically large space, run under
+    tight PPA budgets and slow signoff loops. We build models that learn design structure
+    and validate them where it counts: in the full flow, at signoff.
+  </p>
 </section>
 
-<div id="footer-placeholder"></div>
-<script src="assets/js/include.js"></script>
+<!-- Topic figures: optional. Drop an image at assets/images/research/<slug>.jpg
+     (dtco / physical-design / analog / advanced-tech) and it appears under the
+     matching heading. While missing, the slot removes itself. -->
+<section class="wrap" aria-label="Research areas">
+  <div class="area-grid">
+    <div class="area">
+      <h3><i style="background:var(--poly)"></i>Standard-Cell Design &amp; DTCO</h3>
+      <img class="area-img" src="assets/images/research/dtco.jpg" alt="" onerror="this.remove()">
+      <p>Design-technology co-optimization at the cell level. We synthesize area-optimal
+         CFET standard cells through optimal transistor folding and placement, design
+         multi-skewed multi-bit flip-flop cells for useful-skew timing optimization, and
+         boost pin accessibility through cell layout diversification and replacement.</p>
+      <div class="kw">
+        <span>Std. cell</span><span>CFET</span><span>MBFF</span><span>DTCO</span>
+      </div>
+      <div class="kw pubs">
+        <a href="publications.html#pub-cfet-fp">TCAD 2026</a>
+        <a href="publications.html#pub-mbff-tcad25">TCAD 2025</a>
+        <a href="publications.html#pub-cfet-dac24">DAC 2024</a>
+        <a href="publications.html#pub-mbff-iccad23">ICCAD 2023</a>
+        <a href="publications.html#pub-cell-mwscas21">MWSCAS 2021</a>
+        <a href="publications.html#pub-pin-aspdac21">ASP-DAC 2021</a>
+      </div>
+    </div>
+    <div class="area">
+      <h3><i style="background:var(--m1)"></i>ML-driven Physical Design</h3>
+      <img class="area-img" src="assets/images/research/physical-design.jpg" alt="" onerror="this.remove()">
+      <p>Prediction models that make physical design converge faster. We developed
+         pin accessibility-driven placement optimization, DRC hotspot prediction and
+         resolution built on graph neural networks and U-Net, and ML-based capacitance
+         extraction for parasitic estimation and interconnect geometry exploration.</p>
+      <div class="kw">
+        <span>Placement</span><span>DRC hotspot</span><span>GNN</span><span>PEX</span>
+      </div>
+      <div class="kw pubs">
+        <a href="publications.html#pub-capacitance">ICCAD 2025</a>
+        <a href="publications.html#pub-drv-ispd24">ISPD 2024</a>
+        <a href="publications.html#pub-drc-tcad24">TCAD 2024</a>
+        <a href="publications.html#pub-drc-iccad22">ICCAD 2022</a>
+        <a href="publications.html#pub-pin-date22">DATE 2022</a>
+      </div>
+    </div>
+    <div class="area">
+      <h3><i style="background:var(--via)"></i>AI for Analog Circuit Design</h3>
+      <img class="area-img" src="assets/images/research/analog.jpg" alt="" onerror="this.remove()">
+      <p>Learning-based analog design automation. We optimize transistor sizing with
+         model-based reinforcement learning and TDA-guided landscape-aware search, and
+         learn analog circuit representations with domain-aware hypergraph transformers.</p>
+      <div class="kw">
+        <span>Analog</span><span>Transistor sizing</span><span>RL</span><span>Representation learning</span>
+      </div>
+      <div class="kw pubs">
+        <a href="publications.html#pub-atlas">ICCAD 2026</a>
+        <a href="publications.html#pub-hyperanalog">DAC 2026</a>
+        <a href="publications.html#pub-m3">ICCAD 2025</a>
+      </div>
+    </div>
+    <div class="area">
+      <h3><i style="background:var(--diff)"></i>Advanced Technology</h3>
+      <img class="area-img" src="assets/images/research/advanced-tech.jpg" alt="" onerror="this.remove()">
+      <p>Design methodologies for emerging technologies. We build design enablement for
+         CFET and physical design flows for monolithic 3D ICs, including 3D via allocation
+         tightly linked with routing optimization.</p>
+      <div class="kw">
+        <span>CFET</span><span>M3D</span><span>3D via</span>
+      </div>
+      <div class="kw pubs">
+        <a href="publications.html#pub-cfet-fp">TCAD 2026</a>
+        <a href="publications.html#pub-cfet-dac24">DAC 2024</a>
+        <a href="publications.html#pub-m3d-tcad24">TCAD 2024</a>
+        <a href="publications.html#pub-3dvia-islped22">ISLPED 2022</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="wrap">
+  <div class="foot">
+    <div>
+      <p><b>AIDA Lab</b> · AI-aided Design Automation Laboratory</p>
+      <p>Room 7031, Woojungwon Bldg., Kyung Hee University</p>
+      <p>1732, Deogyeong-daero, Giheung-gu, Yongin-si, Gyeonggi-do, Republic of Korea, 17104</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
 </body>
 </html>
