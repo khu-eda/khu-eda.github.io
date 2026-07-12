@@ -86,6 +86,10 @@ a:focus-visible, button:focus-visible {
   border-radius: 2px;
 }
 .wrap { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+/* Nothing may push the page wider than the screen: a horizontal scroll makes
+   every .wrap look like it has no side margin once the user scrolls right.
+   overflow-x: clip (not hidden) keeps the sticky nav working. */
+html, body { max-width: 100%; overflow-x: clip; }
 main { min-height: 55vh; }
 main[hidden] { display: none; }
 
@@ -171,6 +175,18 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
   .wordmark small { display: none; }
   .nav-links { gap: 16px; }
   .nav-links a { font-size: 0.82rem; }
+}
+/* Phones: wordmark and links no longer fit on one line — stack them */
+@media (max-width: 620px) {
+  .nav-inner { flex-wrap: wrap; height: auto; padding: 10px 0 6px; row-gap: 6px; }
+  .wordmark { font-size: 1.05rem; }
+  .nav-links {
+    width: 100%; justify-content: space-between; gap: 10px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+  }
+  .nav-links a { font-size: 0.78rem; white-space: nowrap; }
+  .nav-menu { left: 0; transform: none; }
+  .theme-btn { width: 26px; height: 26px; flex: none; }
 }
 
 /* Hero (home) */
