@@ -385,7 +385,7 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
   18%  { background: var(--hl-edge); box-shadow: -14px 0 0 var(--hl-edge), 14px 0 0 var(--hl-edge); }
   100% { background: var(--hl); box-shadow: -14px 0 0 var(--hl), 14px 0 0 var(--hl); }
 }
-.pub-tags { display: flex; gap: 8px; margin-bottom: 8px; }
+.pub-tags { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
 .venue-chip {
   font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500;
   letter-spacing: 0.07em; text-transform: uppercase;
@@ -394,9 +394,9 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
 }
 .venue-chip.jrnl { border-color: var(--chip-jrnl); color: var(--chip-jrnl); }
 .rate-chip {
-  font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.04em;
-  padding: 2px 9px;
-  border: 1px dashed var(--line); color: var(--muted);
+  font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.02em;
+  padding: 0; color: var(--muted); opacity: 0.85;
+  align-self: center;
 }
 .pub-venue-full {
   font-size: 0.8rem; color: var(--muted); margin: 4px 0 0;
