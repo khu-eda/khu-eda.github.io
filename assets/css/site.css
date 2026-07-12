@@ -344,13 +344,14 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
   border-bottom: 1px solid var(--line);
 }
 @media (max-width: 560px) { .topic { grid-template-columns: 1fr; align-items: start; } }
-.tname {
+/* .area p sets 0.93rem, so these must out-specify it */
+.area .tname {
   margin: 0;
-  font-family: var(--font-mono); font-size: 0.56rem; font-weight: 400;
+  font-family: var(--font-mono); font-size: 0.62rem; font-weight: 400;
   letter-spacing: 0.05em; text-transform: uppercase;
   color: var(--muted);
 }
-.tpubs { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.area .tpubs { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
 .tpubs a {
   font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.05em;
   padding: 2px 8px; text-transform: uppercase; white-space: nowrap;
@@ -421,7 +422,12 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
   display: grid; grid-template-columns: 260px 1fr; gap: 48px;
   margin-top: 40px; align-items: start;
 }
-@media (max-width: 780px) { .pi-card { grid-template-columns: 1fr; gap: 28px; } }
+@media (max-width: 780px) {
+  /* single column: cap the photo so it does not fill the whole screen */
+  .pi-card { grid-template-columns: 1fr; gap: 24px; }
+  .pi-photo { max-width: 180px; }
+  .pi-photo .initials { font-size: 2.4rem; }
+}
 .pi-photo {
   aspect-ratio: 4 / 5; background: var(--panel);
   border: 1px solid var(--panel-line);
