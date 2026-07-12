@@ -268,17 +268,8 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
 .news-tag.paper { --h: var(--accent); }
 .news-tag.talk  { --h: var(--chip-jrnl); }
 .news-tag.lab   { --h: var(--muted); }
-.news-link {
-  color: var(--accent);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-.news-link:hover {
-  color: var(--accent-hover);
-  background: var(--hl);
-  text-decoration-thickness: 2px;
-}
+.news-link { color: var(--accent); text-decoration: none; }
+.news-link:hover { color: var(--accent-hover); background: var(--hl); }
 .news-link:hover strong { text-decoration: underline; text-underline-offset: 2px; }
 
 /* Research overview (home) */
@@ -335,27 +326,19 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
 }
 .kw span { color: var(--muted); border: 1px solid var(--line); }
 
-/* Paper links under each research area (jump to the entry in Publications) */
-.area-pubs {
-  margin: 12px 0 0; font-size: 0.9rem; color: var(--muted);
-  line-height: 1.9;
-}
+/* Paper links under each research area: boxed chips, click to jump to Publications */
+.area-pubs { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 12px 0 0; }
 .area-pubs .pl {
   font-family: var(--font-mono); font-size: 0.66rem;
   letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--muted); margin-right: 8px;
+  color: var(--muted); margin-right: 4px;
 }
 .area-pubs a {
-  color: var(--accent); font-weight: 500;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.05em;
+  padding: 2px 8px; text-transform: uppercase;
+  color: var(--accent); border: 1px solid var(--accent);
 }
-.area-pubs a:hover {
-  color: var(--accent-hover);
-  background: var(--hl);
-  text-decoration-thickness: 2px;
-}
+.area-pubs a:hover { color: #FFFFFF; background: var(--accent); border-color: var(--accent); }
 
 /* Publications */
 .pub-year {
