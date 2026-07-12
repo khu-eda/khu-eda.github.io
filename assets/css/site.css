@@ -344,7 +344,12 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
   border-bottom: 1px solid var(--line);
 }
 @media (max-width: 560px) { .topic { grid-template-columns: 1fr; align-items: start; } }
-.tname { margin: 0; font-size: 0.9rem; color: var(--ink-2); }
+.tname {
+  margin: 0;
+  font-family: var(--font-mono); font-size: 0.7rem;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--ink-2);
+}
 .tpubs { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
 .tpubs a {
   font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.05em;
