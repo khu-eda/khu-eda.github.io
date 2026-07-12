@@ -346,9 +346,9 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
 @media (max-width: 560px) { .topic { grid-template-columns: 1fr; align-items: start; } }
 .tname {
   margin: 0;
-  font-family: var(--font-mono); font-size: 0.7rem;
-  letter-spacing: 0.06em; text-transform: uppercase;
-  color: var(--ink-2);
+  font-family: var(--font-mono); font-size: 0.62rem; font-weight: 400;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--muted);
 }
 .tpubs { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
 .tpubs a {
