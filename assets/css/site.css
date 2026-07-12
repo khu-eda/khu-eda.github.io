@@ -521,7 +521,7 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
 .m-mail { font-family: var(--font-mono); font-size: 0.74rem; }
 
 /* Teaching block (people page) */
-.teaching-sec { padding: 68px 0 8px; }
+.teaching-sec { padding-top: 68px; padding-bottom: 8px; }
 .course {
   display: grid; grid-template-columns: 96px 1fr; gap: 20px;
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
