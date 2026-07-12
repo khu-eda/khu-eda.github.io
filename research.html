@@ -58,52 +58,88 @@
 <section class="wrap" aria-label="Research areas">
   <div class="area-grid">
     <div class="area">
-      <h3><i style="background:var(--poly)"></i>Standard-Cell Design &amp; DTCO</h3>
+      <h3><i style="background:var(--poly)"></i>Standard-Cell Design and Design-Technology Co-optimization</h3>
       <img class="area-img" src="assets/images/research/dtco.jpg" alt="" onerror="this.remove()">
       <p>Design-technology co-optimization at the cell level. We synthesize area-optimal
-         CFET standard cells through optimal transistor folding and placement, design
-         multi-skewed multi-bit flip-flop cells for useful-skew timing optimization, and
-         boost pin accessibility through cell layout diversification and replacement.</p>
-      <div class="kw">
-        <span>Std. cell</span><span>CFET</span><span>MBFF</span><span>DTCO</span>
+         complementary FET standard cells through optimal transistor folding and placement,
+         design multi-skewed multi-bit flip-flop cells for useful-skew timing optimization,
+         and boost pin accessibility through cell layout diversification and replacement.</p>
+      <div class="topics">
+        <div class="topic">
+          <p class="tname">Complementary FET standard cell synthesis</p>
+          <p class="tpubs"><a href="publications.html#pub-cfet-fp">TCAD 2026</a> <a href="publications.html#pub-cfet-dac24">DAC 2024</a></p>
+        </div>
+        <div class="topic">
+          <p class="tname">Multi-bit flip-flop cell design and useful skew scheduling</p>
+          <p class="tpubs"><a href="publications.html#pub-mbff-tcad25">TCAD 2025</a> <a href="publications.html#pub-mbff-iccad23">ICCAD 2023</a></p>
+        </div>
+        <div class="topic">
+          <p class="tname">Pin accessibility-aware cell layout and replacement</p>
+          <p class="tpubs"><a href="publications.html#pub-cell-mwscas21">MWSCAS 2021</a> <a href="publications.html#pub-pin-aspdac21">ASP-DAC 2021</a></p>
+        </div>
       </div>
-      <div class="area-pubs"><span class="pl">Papers</span><a href="publications.html#pub-cfet-fp">TCAD 2026</a> <a href="publications.html#pub-mbff-tcad25">TCAD 2025</a> <a href="publications.html#pub-cfet-dac24">DAC 2024</a> <a href="publications.html#pub-mbff-iccad23">ICCAD 2023</a> <a href="publications.html#pub-cell-mwscas21">MWSCAS 2021</a> <a href="publications.html#pub-pin-aspdac21">ASP-DAC 2021</a></div>
     </div>
     <div class="area">
-      <h3><i style="background:var(--m1)"></i>ML-driven Physical Design</h3>
+      <h3><i style="background:var(--m1)"></i>Machine Learning-driven Physical Design</h3>
       <img class="area-img" src="assets/images/research/physical-design.jpg" alt="" onerror="this.remove()">
-      <p>Prediction models that make physical design converge faster. We developed
-         pin accessibility-driven placement optimization, DRC hotspot prediction and
-         resolution built on graph neural networks and U-Net, gradient-based placement
-         refinement that resolves design rule violations while staying legalizable, and
-         ML-based capacitance extraction for parasitic estimation and interconnect
-         geometry exploration.</p>
-      <div class="kw">
-        <span>Placement</span><span>DRC hotspot</span><span>GNN</span><span>PEX</span>
+      <p>Prediction models that make physical design converge faster. We predict design rule
+         violations from placement, resolve them with gradient-based placement refinement that
+         stays legalizable, optimize placement for pin accessibility, and extract interconnect
+         capacitance with learned models.</p>
+      <div class="topics">
+        <div class="topic">
+          <p class="tname">Design rule violation resolution at placement</p>
+          <p class="tpubs"><a href="publications.html#pub-pgd">MLCAD 2026</a> <a href="publications.html#pub-drv-ispd24">ISPD 2024</a></p>
+        </div>
+        <div class="topic">
+          <p class="tname">Design rule violation hotspot prediction</p>
+          <p class="tpubs"><a href="publications.html#pub-drc-tcad24">TCAD 2024</a> <a href="publications.html#pub-drc-iccad22">ICCAD 2022</a></p>
+        </div>
+        <div class="topic">
+          <p class="tname">Pin accessibility-driven placement optimization</p>
+          <p class="tpubs"><a href="publications.html#pub-pin-date22">DATE 2022</a></p>
+        </div>
+        <div class="topic">
+          <p class="tname">Interconnect capacitance extraction</p>
+          <p class="tpubs"><a href="publications.html#pub-capacitance">ICCAD 2025</a></p>
+        </div>
       </div>
-      <div class="area-pubs"><span class="pl">Papers</span><a href="publications.html#pub-pgd">MLCAD 2026</a> <a href="publications.html#pub-capacitance">ICCAD 2025</a> <a href="publications.html#pub-drv-ispd24">ISPD 2024</a> <a href="publications.html#pub-drc-tcad24">TCAD 2024</a> <a href="publications.html#pub-drc-iccad22">ICCAD 2022</a> <a href="publications.html#pub-pin-date22">DATE 2022</a></div>
     </div>
     <div class="area">
-      <h3><i style="background:var(--via)"></i>AI for Analog Circuit Design</h3>
+      <h3><i style="background:var(--via)"></i>Artificial Intelligence for Analog Circuit Design</h3>
       <img class="area-img" src="assets/images/research/analog.jpg" alt="" onerror="this.remove()">
       <p>Learning-based analog design automation. We optimize transistor sizing with
-         model-based reinforcement learning and TDA-guided landscape-aware search, and
-         learn analog circuit representations with domain-aware hypergraph transformers.</p>
-      <div class="kw">
-        <span>Analog</span><span>Transistor sizing</span><span>RL</span><span>Representation learning</span>
+         model-based reinforcement learning and landscape-aware search guided by topological
+         data analysis, and learn analog circuit representations with domain-aware hypergraph
+         transformers.</p>
+      <div class="topics">
+        <div class="topic">
+          <p class="tname">Analog transistor sizing</p>
+          <p class="tpubs"><a href="publications.html#pub-atlas">ICCAD 2026</a> <a href="publications.html#pub-m3">ICCAD 2025</a></p>
+        </div>
+        <div class="topic">
+          <p class="tname">Analog circuit representation learning</p>
+          <p class="tpubs"><a href="publications.html#pub-hyperanalog">DAC 2026</a></p>
+        </div>
       </div>
-      <div class="area-pubs"><span class="pl">Papers</span><a href="publications.html#pub-atlas">ICCAD 2026</a> <a href="publications.html#pub-hyperanalog">DAC 2026</a> <a href="publications.html#pub-m3">ICCAD 2025</a></div>
     </div>
     <div class="area">
       <h3><i style="background:var(--diff)"></i>Advanced Technology</h3>
       <img class="area-img" src="assets/images/research/advanced-tech.jpg" alt="" onerror="this.remove()">
       <p>Design methodologies for emerging technologies. We build design enablement for
-         CFET and physical design flows for monolithic 3D ICs, including 3D via allocation
-         tightly linked with routing optimization.</p>
-      <div class="kw">
-        <span>CFET</span><span>M3D</span><span>3D via</span>
+         complementary FET and physical design flows for monolithic three-dimensional
+         integrated circuits, including vertical connection allocation tightly linked with
+         routing optimization.</p>
+      <div class="topics">
+        <div class="topic">
+          <p class="tname">Complementary FET design enablement</p>
+          <p class="tpubs"><a href="publications.html#pub-cfet-fp">TCAD 2026</a> <a href="publications.html#pub-cfet-dac24">DAC 2024</a></p>
+        </div>
+        <div class="topic">
+          <p class="tname">Monolithic three-dimensional integrated circuits</p>
+          <p class="tpubs"><a href="publications.html#pub-m3d-tcad24">TCAD 2024</a> <a href="publications.html#pub-3dvia-islped22">ISLPED 2022</a></p>
+        </div>
       </div>
-      <div class="area-pubs"><span class="pl">Papers</span><a href="publications.html#pub-cfet-fp">TCAD 2026</a> <a href="publications.html#pub-cfet-dac24">DAC 2024</a> <a href="publications.html#pub-m3d-tcad24">TCAD 2024</a> <a href="publications.html#pub-3dvia-islped22">ISLPED 2022</a></div>
     </div>
   </div>
 </section>

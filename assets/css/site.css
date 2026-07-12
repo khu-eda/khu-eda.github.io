@@ -336,19 +336,23 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
 }
 .kw span { color: var(--muted); border: 1px solid var(--line); }
 
-/* Paper links under each research area: boxed chips, click to jump to Publications */
-.area-pubs { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 12px 0 0; }
-.area-pubs .pl {
-  font-family: var(--font-mono); font-size: 0.66rem;
-  letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--muted); margin-right: 4px;
+/* Topics inside a research area: topic name + the papers under it */
+.topics { margin-top: 14px; border-top: 1px solid var(--line); }
+.topic {
+  display: grid; grid-template-columns: 1fr auto; gap: 10px 16px;
+  align-items: center; padding: 9px 0;
+  border-bottom: 1px solid var(--line);
 }
-.area-pubs a {
+@media (max-width: 560px) { .topic { grid-template-columns: 1fr; align-items: start; } }
+.tname { margin: 0; font-size: 0.9rem; color: var(--ink-2); }
+.tpubs { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.tpubs a {
   font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.05em;
-  padding: 2px 8px; text-transform: uppercase;
+  padding: 2px 8px; text-transform: uppercase; white-space: nowrap;
   color: var(--accent); border: 1px solid var(--accent);
 }
-.area-pubs a:hover { color: #FFFFFF; background: var(--accent); border-color: var(--accent); }
+.tpubs a:hover { color: #FFFFFF; background: var(--accent); }
+@media (max-width: 560px) { .tpubs { justify-content: flex-start; } }
 
 /* Publications */
 .pub-year {
