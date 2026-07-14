@@ -185,8 +185,17 @@ h2 { font-size: clamp(1.55rem, 3vw, 2rem); margin: 0 0 10px; }
     overflow-x: auto; -webkit-overflow-scrolling: touch;
   }
   .nav-links a { font-size: 0.78rem; white-space: nowrap; }
-  .nav-menu { left: 0; transform: none; }
   .theme-btn { width: 26px; height: 26px; flex: none; }
+  /* Touch devices have no hover: flatten the People dropdown into
+     Professor and Students as ordinary top-level links. */
+  .nav-drop { display: contents; }
+  .nav-drop > a { display: none; }
+  .nav-menu {
+    position: static; transform: none; display: flex; flex-direction: row;
+    gap: 10px; min-width: 0; padding: 0; border: none; background: none;
+  }
+  .nav-links .nav-menu a { padding: 4px 0; font-size: 0.78rem; }
+  .nav-links .nav-menu a:hover { background: none; }
 }
 
 /* Hero (home) */
