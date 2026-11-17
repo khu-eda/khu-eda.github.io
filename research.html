@@ -81,13 +81,19 @@
       </div>
     </div>
     <div class="area">
-      <h3><i style="background:var(--m1)"></i>ML-driven Physical Design</h3>
+      <h3><i style="background:var(--m1)"></i>ML-driven Digital Design</h3>
       <img class="area-img" src="assets/images/research/physical-design.jpg" alt="" onerror="this.remove()">
-      <p>Prediction models that make physical design converge faster. We predict design rule
-         check (DRC) hotspots from placement, resolve design rule violations (DRVs) with
+      <p>Learned models that make the digital flow converge faster, from RTL to layout. We
+         optimize RTL with LLM rewrites guided by prior synthesis data, tune physical design
+         parameters with pre-adapted in-context surrogate models, predict design rule check
+         (DRC) hotspots from placement, resolve design rule violations (DRVs) with
          gradient-based placement refinement that stays legalizable, optimize placement for
          pin accessibility, and extract interconnect capacitance with learned models.</p>
       <div class="topics">
+        <div class="topic">
+          <p class="tname">RTL Optimization</p>
+          <p class="tpubs"><a href="publications.html#pub-pg-rtl">DATE 2027</a></p>
+        </div>
         <div class="topic">
           <p class="tname">DRV Resolution</p>
           <p class="tpubs"><a href="publications.html#pub-pgd">MLCAD 2026</a> <a href="publications.html#pub-drv-ispd24">ISPD 2024</a></p>
@@ -115,8 +121,9 @@
       <img class="area-img" src="assets/images/research/analog.jpg" alt="" onerror="this.remove()">
       <p>Learning-based analog design automation. We optimize transistor sizing with
          model-based reinforcement learning (RL) and landscape-aware search guided by
-         topological data analysis (TDA), and learn analog circuit representations with
-         domain-aware hypergraph transformers.</p>
+         topological data analysis (TDA), coordinate multi-block sizing with LLM-orchestrated
+         agents, screen process-voltage-temperature (PVT) corners with bandit-guided sampling,
+         and learn analog circuit representations with domain-aware hypergraph transformers.</p>
       <div class="topics">
         <div class="topic">
           <p class="tname">Transistor Sizing</p>
