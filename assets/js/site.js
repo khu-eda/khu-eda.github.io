@@ -245,7 +245,7 @@
 
   /* ── Preview-only router (multi-page simulation in one file) ── */
   if (document.getElementById('preview-root')) {
-    var PAGES = ['index', 'research', 'publications', 'professor', 'students', 'contact', 'apply', 'gallery'];
+    var PAGES = ['index', 'research', 'publications', 'professor', 'students', 'contact', 'gallery'];
     function showPage(name) {
       document.querySelectorAll('main[data-page]').forEach(function (m) {
         m.hidden = (m.getAttribute('data-page') !== name);
