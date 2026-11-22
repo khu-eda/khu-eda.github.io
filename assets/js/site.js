@@ -243,6 +243,32 @@
     });
   });
 
+  /* ── Visitor-stats opt-out (for the PI's own browsers) ──
+     Open any page with #notrack to stop GoatCounter counting this browser,
+     #track to count it again. Unlike count.js's #toggle-goatcounter this is
+     idempotent, works without a reload, and does not depend on gc.zgo.at
+     loading (content blockers, Safari). It writes 'skipgc', the localStorage
+     key count.js checks before sending a hit. */
+  function statsOptOut() {
+    var h = location.hash, msg;
+    if (h !== '#notrack' && h !== '#track') return;
+    try {
+      if (h === '#notrack') {
+        localStorage.setItem('skipgc', 't');
+        msg = 'Visitor stats: this browser is now EXCLUDED from counts.';
+      } else {
+        localStorage.removeItem('skipgc');
+        msg = 'Visitor stats: this browser is COUNTED again.';
+      }
+    } catch (e) {
+      msg = 'Visitor stats: this browser cannot store the setting (private mode?).';
+    }
+    try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+    alert(msg);
+  }
+  statsOptOut();
+  window.addEventListener('hashchange', statsOptOut);
+
   /* ── Preview-only router (multi-page simulation in one file) ── */
   if (document.getElementById('preview-root')) {
     var PAGES = ['index', 'research', 'publications', 'professor', 'students', 'contact', 'gallery'];
